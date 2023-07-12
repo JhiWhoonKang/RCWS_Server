@@ -39,9 +39,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.richUdpConnectionStatus = new System.Windows.Forms.RichTextBox();
             this.btnUdpConnect = new System.Windows.Forms.Button();
             this.textBox_UDPPort = new System.Windows.Forms.TextBox();
-            this.richUdpConnectionStatus = new System.Windows.Forms.RichTextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -142,6 +142,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "UDP/IP";
             // 
+            // richUdpConnectionStatus
+            // 
+            this.richUdpConnectionStatus.Location = new System.Drawing.Point(10, 129);
+            this.richUdpConnectionStatus.Name = "richUdpConnectionStatus";
+            this.richUdpConnectionStatus.Size = new System.Drawing.Size(228, 96);
+            this.richUdpConnectionStatus.TabIndex = 13;
+            this.richUdpConnectionStatus.Text = "";
+            // 
             // btnUdpConnect
             // 
             this.btnUdpConnect.Location = new System.Drawing.Point(10, 65);
@@ -158,14 +166,6 @@
             this.textBox_UDPPort.Name = "textBox_UDPPort";
             this.textBox_UDPPort.Size = new System.Drawing.Size(100, 21);
             this.textBox_UDPPort.TabIndex = 12;
-            // 
-            // richUdpConnectionStatus
-            // 
-            this.richUdpConnectionStatus.Location = new System.Drawing.Point(10, 129);
-            this.richUdpConnectionStatus.Name = "richUdpConnectionStatus";
-            this.richUdpConnectionStatus.Size = new System.Drawing.Size(228, 96);
-            this.richUdpConnectionStatus.TabIndex = 13;
-            this.richUdpConnectionStatus.Text = "";
             // 
             // Form1
             // 
