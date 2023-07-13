@@ -55,8 +55,33 @@ namespace RCWS_Server
 
             while (tcpClient1.Connected)  // 클라이언트가 연결되어 있는 동안
             {
-                string receiveData1 = streamReader1.ReadLine();  // 수신 데이타를 읽어서 receiveData1 변수에 저장
-                writeTcpRichTextbox(receiveData1); // 데이타를 수신창에 쓰기                  
+                string receivedDirection = streamReader1.ReadLine(); // 수신데이터를 읽어서 receivedDirection 변수에 저장
+
+                if (!string.IsNullOrEmpty(receivedDirection))
+                {
+                    // 받은 방향을 로깅
+                    writeTcpRichTextbox("Received direction: " + receivedDirection);
+                    char direction = receivedDirection[0];
+
+                    switch (direction)
+                    {
+                        case 'U': // 위로
+                                  // 위로 움직이는 로직 구현
+                            break;
+
+                        case 'L': // 왼쪽으로
+                                  // 왼쪽으로 움직이는 로직 구현
+                            break;
+
+                        case 'D': // 아래로
+                                  // 아래로 움직이는 로직 구현
+                            break;
+
+                        case 'R': // 오른쪽으로
+                                  // 오른쪽으로 움직이는 로직 구현
+                            break;
+                    }
+                }
             }
         }
 
