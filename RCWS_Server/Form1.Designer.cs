@@ -42,6 +42,7 @@
             this.richUdpConnectionStatus = new System.Windows.Forms.RichTextBox();
             this.btnUdpConnect = new System.Windows.Forms.Button();
             this.textBox_UDPPort = new System.Windows.Forms.TextBox();
+            this.btn_Video = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,11 +168,22 @@
             this.textBox_UDPPort.Size = new System.Drawing.Size(100, 21);
             this.textBox_UDPPort.TabIndex = 12;
             // 
+            // btn_Video
+            // 
+            this.btn_Video.Location = new System.Drawing.Point(136, 524);
+            this.btn_Video.Name = "btn_Video";
+            this.btn_Video.Size = new System.Drawing.Size(75, 23);
+            this.btn_Video.TabIndex = 11;
+            this.btn_Video.Text = "영상 전송";
+            this.btn_Video.UseVisualStyleBackColor = true;
+            this.btn_Video.Click += new System.EventHandler(this.btn_Video_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 559);
+            this.Controls.Add(this.btn_Video);
             this.Controls.Add(this.richTcpConnectionStatus);
             this.Controls.Add(this.btnTcpConnect);
             this.Controls.Add(this.label2);
@@ -207,6 +219,7 @@
         private System.Windows.Forms.RichTextBox richUdpConnectionStatus;
         private System.Windows.Forms.Button btnUdpConnect;
         private System.Windows.Forms.TextBox textBox_UDPPort;
+        private System.Windows.Forms.Button btn_Video;
     }
 }
 

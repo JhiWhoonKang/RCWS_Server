@@ -12,6 +12,7 @@ using System.Net; // 추가
 using System.Net.Sockets; // 추가
 using System.IO; // 추가
 using System.Diagnostics;
+using OpenCvSharp;
 
 namespace RCWS_Server
 {
@@ -124,6 +125,13 @@ namespace RCWS_Server
         {
             richUdpConnectionStatus.Invoke((MethodInvoker)delegate { richUdpConnectionStatus.AppendText(str + "\r\n"); }); // 데이타를 수신창에 표시, 반드시 invoke 사용. 충돌피함.
             richUdpConnectionStatus.Invoke((MethodInvoker)delegate { richUdpConnectionStatus.ScrollToCaret(); });  // 스크롤을 젤 밑으로.
+        }
+
+        StreamWriter streamWriter;
+        private void btn_Video_Click(object sender, EventArgs e)
+        {
+            Video video = new Video(streamWriter);
+            video.Show();
         }
     }
 }
