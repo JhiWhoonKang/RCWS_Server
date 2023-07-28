@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading; // 추가
-using System.Net; // 추가
-using System.Net.Sockets; // 추가
-using System.IO; // 추가
+using System.Threading;
+using System.Net;
+using System.Net.Sockets;
+using System.IO;
 using System.Diagnostics;
 using OpenCvSharp;
 
@@ -95,7 +95,7 @@ namespace RCWS_Server
 
             udpServer = new UdpClient(localPort);
             udpServer.Client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
-            remoteEndpoint = new IPEndPoint(IPAddress.Any, 0);
+            remoteEndpoint = new IPEndPoint(IPAddress.Any, 0);// Client IP 담을 변수
 
             writeUdpRichTextbox("서버 준비...클라이언트 기다리는 중...");
 

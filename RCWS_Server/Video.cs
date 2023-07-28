@@ -340,6 +340,7 @@ namespace RCWS_Server
             }
         }
 
+        // 40,060
         private static byte[] ConvertImageToByteArray(Mat image)
         {
             using (var ms = new System.IO.MemoryStream())
